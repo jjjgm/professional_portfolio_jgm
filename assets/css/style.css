@@ -1,0 +1,96 @@
+* {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+header h1 {
+    text-align: left;
+    /* display: inline; */
+    font-family: Helvetica;
+    padding-left: 2.5rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-right: 2rem;
+} 
+
+nav ul li {
+    padding: 0 0.5rem;
+
+}
+
+.h1 {
+    font-family: Helvetica;
+    font-size: 25px;
+}
+.a {
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+section {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+section h2 {
+    flex: 0 0 25%;
+}
+
+section div {
+    flex: 0 0 70%;
+}
+
+.card {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5px;
+    background-color: bisque;
+    overflow: auto;
+}
+
+section h3 {
+    flex: 0 0 25%;
+    flex-wrap: no-wrap;
+    align-content: left;
+}
+
+section p {
+    flex: 0 0 25%;
+    align-content: space-between;
+}
+
+.flex {
+    flex: 0 0 25%;
+    align-content: space-between;
+}
+
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 772px) {
+    header {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+        width: 100%;
+    }
+}
