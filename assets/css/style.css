@@ -1,9 +1,13 @@
+:root {}
+
+
 * {
     list-style: none;
     margin: 0px;
-    padding: 0px;
+    padding: 0px
 }
 
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,65 +27,140 @@ ul {
     display: flex;
     list-style: none;
     padding-right: 2rem;
-} 
+}
 
 nav ul li {
     padding: 0 0.5rem;
-
 }
 
-.h1 {
-    font-family: Helvetica;
-    font-size: 25px;
-}
-.a {
-    font-size: 18px;
-    font-family: Helvetica;
-}
-
-section {
+p {
     display: flex;
-    flex-wrap: no-wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-}
-section h2 {
-    flex: 0 0 25%;
-}
-
-section div {
-    flex: 0 0 70%;
-}
-
-.card {
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 5px;
-    background-color: bisque;
-    overflow: auto;
 }
 
-section h3 {
+flex {
     flex: 0 0 25%;
-    flex-wrap: no-wrap;
-    align-content: left;
+}
+
+h2 {
+    padding-left: 2rem;
+    font-family: Helvetica;
+}
+
+
+/* About Me */
+section {
+    flex: content;
+
+}
+
+section h2 {
+    padding-left: 2rem;
+    margin: 0.5rem;
 }
 
 section p {
-    flex: 0 0 25%;
-    align-content: space-between;
-}
-
-.flex {
-    flex: 0 0 25%;
-    align-content: space-between;
+    font-family: Helvetica;
+    padding-left: 3rem;
+    padding-right: 2rem;
 }
 
 
-@media screen and (max-width: 980px) {
+/*hero area*/
+main {
+    padding-left: 2rem;
+    margin: 2rem;
+}
 
+.genone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.gentwo {
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;
+    background-color: rgba(179, 126, 173, 0.274);
+    border: solid 1px;
+    border-radius: 5px; 
+}
+
+/* work header */
+figure {
+    flex: 0 0 100%;
+}
+figure h2 {
+    text-align: left;
+}
+/* work boxes */
+article {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    margin: 2rem;
+    justify-content: start;
+}
+
+article .secondary {
+    margin: 5px;
+    font-family: Helvetica;
+}
+
+.h3 {
+    font-family: Helvetica, sans-serif;
+    align-content: center;
+}
+
+/* boxes */
+.primary {
+    display: flex;
+}
+
+.secondary {
+    display: flex;
+    width: 445px;
+    height: 250px;
+    background-color: rgba(179, 126, 173, 0.274);
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, Arial;
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+footer h2 {
+    display: flex;
+}
+
+footer ul li {
+    padding: 0 0.5rem;
+}
+
+
+@media screen and (max-width: 998px) {
+    header {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+        width: 100%;
+    }
+
+    article {
+        flex-wrap: wrap;
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 772px) {
@@ -92,5 +171,10 @@ section p {
         align-items: center;
         padding: 2rem 0rem;
         width: 100%;
+    }
+
+    article {
+        flex-wrap: wrap;
+        display: flex;
     }
 }
