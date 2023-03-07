@@ -1,5 +1,16 @@
-:root {}
+:root {
+    --dusty-carnation: rgba(179, 126, 173, 0.274);
+    --boned-in: rgb(219, 217, 211);
+    --chardust: rgba(174, 165, 171, 0.501);
+    --carnwilt: rgba(182, 157, 174, 0.629);
+    --dustyrhubarb: rgba(171, 90, 140, 0.253);
+}
 
+/*elements colors to change once chosen*/
+::selection {
+    background-color: var(--dustyrhubarb);
+    color: var(--dustyrhubarb);
+}
 
 * {
     list-style: none;
@@ -7,8 +18,13 @@
     padding: 0px
 }
 
+body {
+    background-color: var(--boned-in);
+}
+
 /* header */
 header {
+    background-color: var(--chardust);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +63,10 @@ h2 {
     font-family: Helvetica;
 }
 
+a {
+    font-family: Helvetica;
+}
+
 
 /* About Me */
 section {
@@ -82,18 +102,26 @@ main {
     width: 100%;
     height: 200px;
     justify-content: space-around;
-    background-color: rgba(179, 126, 173, 0.274);
-    border: solid 1px;
-    border-radius: 5px; 
+    background-color: var(--dusty-carnation);
+    border-radius: 5px;
+}
+
+/*mouse hover over hero */
+.genone:hover,
+.gentwo:hover {
+    box-shadow: 0 0 4px;
+    background-image: linear-gradient(var(--carnwilt) 100%, var(--chardust) 0%);
 }
 
 /* work header */
 figure {
     flex: 0 0 100%;
 }
+
 figure h2 {
     text-align: left;
 }
+
 /* work boxes */
 article {
     display: flex;
@@ -108,32 +136,37 @@ article .secondary {
     font-family: Helvetica;
 }
 
-.h3 {
-    font-family: Helvetica, sans-serif;
-    align-content: center;
-}
-
 /* boxes */
 .primary {
-    display: flex;
+    flex: 1 0 100%;
+    align-items: center;
 }
 
 .secondary {
     display: flex;
+    flex-direction: column;
     width: 445px;
     height: 250px;
-    background-color: rgba(179, 126, 173, 0.274);
-    border: solid 1px;
+    background-color: var(--dusty-carnation);
     border-radius: 5px;
 }
 
+.work h3 {
+    border: solid 2px;
+}
 
+/*work box hover with curser */
+.secondary:hover {
+    box-shadow: 0 0 4px;
+    background-image: linear-gradient(var(--carnwilt) 100%, var(--chardust) 0%);
+}
 
 /*footer*/
 footer {
     display: flex;
     justify-content: space-between;
     font-family: Helvetica, Arial;
+    background-color: var(--chardust);
     padding: 2rem 0rem;
     width: 100%;
 }
