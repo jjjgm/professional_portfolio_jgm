@@ -195,7 +195,7 @@ footer ul li {
 }
 
 
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         display: flex;
@@ -217,7 +217,55 @@ footer ul li {
     article {
         flex-wrap: wrap;
         display: flex;
+    }
+
+    img {
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    header {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 -2rem;
+        margin: 0;
+    }
+
+    main {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+
+    article {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        margin: -2rem;
+    }
+
+    .herowork {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        width: 100vw;
+    }
+
+    section {
+        padding-left:-2rem;
+        margin-bottom: 3rem;
+        margin-top: 0.5rem;
+        justify-content: center;
+
+    }
+
+    footer {
+        padding-top: 2rem 0;
     }
 }
 
@@ -265,15 +313,12 @@ footer ul li {
         display: flex;
     }
 
-    main h2 {
-        position: relative;
-    }
 
     article {
         flex-wrap: wrap;
         display: flex;
         width: 100%;
-        margin: 0;
+        margin: -2rem;
     }
 
     .herowork {
@@ -286,6 +331,14 @@ footer ul li {
     }
 
     section {
-        padding: .7rem;
+        padding-left:-2rem;
+        margin-bottom: 3rem;
+        margin-top: 0.5rem;
+        justify-content: center;
+
+    }
+
+    footer {
+        padding-top: 2rem 0;
     }
 }
