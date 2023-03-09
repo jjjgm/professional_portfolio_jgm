@@ -4,7 +4,7 @@
 HMTL Index-
     My HTML began with the body, header, nav, and main elements.
     I remembered from previous lectures that the ID can only be used on a single element and I tried my best to remember that moving forward when adding divs.
-    I did encounter a bug in which i ended up using the same name from an ID when working on adding images. (Shawn[TA] realized this when I had some styling issues). I did go back and rename each ID in each photo with a personalized name.
+    I did encounter a bug in which i ended up using the same name from an ID when working on adding images. (Shawn[Class TA] realized this when I had some styling issues). I did go back and rename each ID in each photo with a personalized name.
     I added comments to each section to help categorize where in the page the code would land.
     (It's possible that with time I will re-work this nomenclature to be more clever and intuitive.)
 
@@ -45,14 +45,16 @@ N/A
 
 ## Deploy Link
 
-[Project 2: Deploy Link]()
+[Project 2: Deploy Link](https://jjjgm.github.io/professional_portfolio_jgm/)
 
 
 ## Contributions
 On various occasions, I joined our class' "Lounge" room on Discord. 
     In the Lounge, many students met and discussed bugs in our code. This helped me on various occasion with styling issues I had with Flexbox containers. Here, I also re-learned about using # for ID in a div, instead of . for all which is class standard in a div in CSS styling.
 
+
     I recived a good amount of assistance from our TA, Shawn as well in the "Lounge".
+
 
     I had two tutoring sessions through our class bootcamp, in which I recived assitance with my code as well. I had help with the nav, padding, styling, and learning flex and headers and footers.
 
