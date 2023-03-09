@@ -133,22 +133,21 @@ footer ul li {
     padding: 0 0.5rem;
 }
 
-/* MOBILE screen */
+/* MOBILE SCREENS */
 @media screen and (max-width: 468px) {
     header {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        align-items: center;
-        
+        justify-content: safe center;
     }
 
-    header h1 {
-        padding-left: 0;
+    header h1, ul {
+        padding:0
     }
 
     nav ul li {
-        padding: 0.5;
-        text-align: center;
+        padding: 0.5rem;
     }
 
     main {
@@ -156,6 +155,7 @@ footer ul li {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     main img {
@@ -178,7 +178,7 @@ footer ul li {
         gap: 1;
     }
 
-    .herowork{
+    .herowork {
         margin: .2rem;
         width: 100%;
         height: 70vw;
@@ -209,19 +209,21 @@ footer ul li {
     }
 }
 
-/* AVERAGE TABLET SCREEN */
+/* TABLET VIEW */
 @media screen and (max-width: 768px) {
     header {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0rem;
         width: 100%;
     }
+
 
     main {
         flex-wrap: wrap;
         display: flex;
+    }
+
+    section {
+        margin: 1;
     }
 
     article {
@@ -241,19 +243,16 @@ footer ul li {
     }
 }
 
-/* SMALL LAPTOP SCREEN */
+/* SMALLER SCREEN than DESKTOP */
 @media screen and (max-width: 998px) {
     header {
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     main {
         flex-wrap: wrap;
         display: flex;
     }
-
 
     article {
         flex-wrap: wrap;
@@ -274,14 +273,9 @@ footer ul li {
     }
 
     section {
-        padding-left: -2rem;
-        margin-bottom: 3rem;
-        margin-top: 0.5rem;
         justify-content: center;
-
     }
 
     footer {
         padding-top: 2rem 0;
     }
-}

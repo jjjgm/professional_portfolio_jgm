@@ -33,7 +33,7 @@ p {
 }
 
 p {
-
+    font-size: 16px;
     flex-wrap: wrap;
 }
 
@@ -45,7 +45,7 @@ a {
 header {
     background-color: var(--boned-in);
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     padding: 2rem 0rem;
     width: 100%;
 }
@@ -80,6 +80,7 @@ main {
     text-align: center;
     position: relative;
 }
+
 /* ABOUT ME IMAGE */
 main img {
     width: 400px;
@@ -87,6 +88,7 @@ main img {
     border-radius: 20px;
     position: relative;
 }
+
 /* ABOUT ME - INFO */
 .aboutme2 {
     flex-wrap: wrap;
@@ -105,7 +107,6 @@ section h2 {
     position: relative;
 }
 
-
 /*WORK ELEMENT(S) FOR ALL FLEXCONTAINERS*/
 article {
     display: flex;
@@ -113,11 +114,12 @@ article {
     justify-content: center;
 
 }
+
 /* HERO BOX*/
 .herowork {
     flex-direction: column;
     flex-wrap: wrap;
-    border: solid 2px;
+    border: solid 1.7px;
     max-height: 246px;
     resize: both;
     width: 100%;
@@ -128,8 +130,10 @@ article {
     width: 100%;
     resize: both;
 }
+
 /*HERO BOX TITLE*/
 .herowork h3 {
+    padding-bottom: .07rem;
     justify-content: center;
     background-color: var(--dusty-carnation);
 }
@@ -168,7 +172,7 @@ article {
     max-height: 243px;
     margin: .2rem;
     resize: both;
-    border: solid 2px;
+    border: solid 1.7px;
     padding-bottom: 1.4rem;
 }
 
@@ -219,18 +223,17 @@ footer ul li {
 @media screen and (max-width: 468px) {
     header {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        align-items: center;
-        
+        justify-content: safe center;
     }
 
-    header h1 {
-        padding-left: 0;
+    header h1, ul {
+        padding:0
     }
 
     nav ul li {
-        padding: 0.5;
-        text-align: center;
+        padding: 0.5rem;
     }
 
     main {
@@ -238,6 +241,7 @@ footer ul li {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     main img {
@@ -260,7 +264,7 @@ footer ul li {
         gap: 1;
     }
 
-    .herowork{
+    .herowork {
         margin: .2rem;
         width: 100%;
         height: 70vw;
@@ -297,7 +301,7 @@ footer ul li {
         display: flex;
         width: 100%;
     }
-    
+
 
     main {
         flex-wrap: wrap;
@@ -324,6 +328,7 @@ footer ul li {
         position: relative;
     }
 }
+
 /* SMALLER SCREEN than DESKTOP */
 @media screen and (max-width: 998px) {
     header {
