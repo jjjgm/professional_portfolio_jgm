@@ -19,8 +19,12 @@ Style CSS-
  Reset CSS-
     The Reset CSS document was made from a very bare version of my current CSS styling code, which will allow me in the future to modify any styling changes with ease (ex. if I change my mind with any colors or have any issues with media queary as styling changes arise).
 
+
+
 *Disclaimer* NO currently working Portfolio Links were added for:
  Work Two - Work Seven, but there are currently non-responsive as they are works in progress/ TBD through the course.
+
+ Edits needed to be made to Reset CSS for image links, and asset links as deployment link did not match live server view before deployment
 
 ## Usage
 This project will function as a working portfolio throughout the length of the bootcamp program.
@@ -61,7 +65,11 @@ On various occasions, I joined our class' "Lounge" room on Discord.
 ## Resources
 
 [Making Sense of Flexbox: Video](https://www.youtube.com/watch?v=u044iM9xsWU&t=869s)
+
+
 [Justify-Content: Web](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+
+
 [align-items: Web](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 
 ## Assets
