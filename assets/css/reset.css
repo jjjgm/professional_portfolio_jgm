@@ -1,0 +1,287 @@
+::before:root {
+    --dusty-carnation: rgba(179, 126, 173, 0.274);
+    --boned-in: rgb(219, 217, 211);
+    --chardust: rgba(174, 165, 171, 0.501);
+    --carnwilt: rgba(182, 157, 174, 0.629);
+    --dustyrhubarb: rgba(171, 90, 140, 0.253);
+    --greyday: rgb(49, 46, 46);
+    --oldsunnyD: rgba(244, 134, 23, 0.208);
+}
+
+* {
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    background-color: var(--boned-in);
+    font-size: 16px;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--dusty-carnation);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+nav ul li {
+    padding: 0rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.bio {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+main img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.aboutme2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/* FLEX CONT HERO */
+.herowork {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 246px;
+    resize: both;
+    width: 100%;
+    padding-bottom: 1.4rem;
+}
+
+.herowork2 {
+    width: 100%;
+    resize: both;
+}
+
+/* FLEX IMG */
+.herowork2 img {
+    width: 100%;
+    max-height: 243px;
+    object-fit: cover;
+}
+
+/* FLEX CONT SMALL */
+.primarywork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.05 rem;
+}
+
+.secondarywork {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 330px;
+    max-height: 243px;
+    margin: .2rem;
+    resize: both;
+    padding-bottom: 1.4rem;
+}
+/* FLEX CONT IMG*/
+.secondarywork img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, Arial;
+    background-color: var(--chardust);
+    width: 100%;
+}
+
+footer ul li {
+    padding: 0 0.5rem;
+}
+
+/* MOBILE screen */
+@media screen and (max-width: 468px) {
+    header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    header h1 {
+        padding-left: 0;
+    }
+
+    nav ul li {
+        padding: 0.5;
+        text-align: center;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main img {
+        max-width: 70vw;
+        height: fit-content;
+    }
+
+    main h2 {
+        position: relative;
+    }
+
+    section {
+        padding-left: -2rem;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    article {
+        display: flex;
+        gap: 1;
+    }
+
+    .herowork{
+        margin: .2rem;
+        width: 100%;
+        height: 70vw;
+    }
+
+    .herowork2 img {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .primarywork,
+    .secondarywork {
+        flex-wrap: wrap;
+        resize: both;
+        gap: 1;
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+        width: 100%;
+        height: 70vw;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+    footer ul li {
+        padding: 0.002;
+    }
+}
+
+/* AVERAGE TABLET SCREEN */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+        width: 100%;
+    }
+
+    main {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    article {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+
+    .primarywork {
+        display: flex;
+        flex-shrink: 1;
+    }
+
+    .herowork2 img {
+        width: 100%;
+        position: relative;
+    }
+}
+
+/* SMALL LAPTOP SCREEN */
+@media screen and (max-width: 998px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+
+    article {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+
+    .primarywork,
+    .secondarywork,
+    .herowork,
+    .herowork2 {
+        flex-wrap: wrap;
+        resize: both;
+    }
+
+    img {
+        width: 100vw;
+    }
+
+    section {
+        padding-left: -2rem;
+        margin-bottom: 3rem;
+        margin-top: 0.5rem;
+        justify-content: center;
+
+    }
+
+    footer {
+        padding-top: 2rem 0;
+    }
+}

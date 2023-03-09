@@ -15,7 +15,8 @@
 }
 
 body {
-    background-image: linear-gradient(var(--greyday) 0%,
+    background-image:
+        linear-gradient(var(--greyday) 0%,
             var(--oldsunnyD) 100%);
 }
 
@@ -44,15 +45,12 @@ a {
 header {
     background-color: var(--boned-in);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;  
     padding: 2rem 0rem;
     width: 100%;
 }
 
 header h1 {
-    text-align: left;
-    /* display: inline; */
     padding-left: 2.5rem;
 }
 
@@ -66,29 +64,26 @@ nav ul li {
     padding: 0 0.5rem;
 }
 
-
 /* About Me */
 main {
     display: flex;
-    padding-top: 2rem;
     justify-content: center;
     background-image: linear-gradient(var(--oldsunnyD) 0%,
             var(--chardust) 100%);
 }
 
-main .bio {
-    flex-wrap: wrap;
-    padding-top: .007rem;
-    padding-bottom: 1rem;
+.bio {
+    display: block;
+    padding: 1rem;
     text-align: center;
+    position: relative;
 }
 
 main img {
     width: 400px;
     height: 400px;
     border-radius: 20px;
-    justify-content: center;
-
+    position: relative;
 }
 
 .aboutme2 {
@@ -100,12 +95,12 @@ main img {
 /* work header */
 section {
     display: flex;
+    justify-content: center;
+    margin: 1rem;
 }
 
 section h2 {
-    justify-content: center;
-    padding-left: 2rem;
-    margin-bottom: .5rem;
+    position: relative;
 }
 
 /*work hero box*/
@@ -220,7 +215,18 @@ footer ul li {
 @media screen and (max-width: 468px) {
     header {
         display: flex;
-        width: 99%;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    header h1 {
+        padding-left: 0;
+    }
+
+    nav ul li {
+        padding: 0.5;
+        text-align: center;
     }
 
     main {
@@ -239,25 +245,37 @@ footer ul li {
         position: relative;
     }
 
-    article {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .primarywork, .secondarywork, .herowork, .herowork2 {
-        flex-wrap: wrap;
-        resize: both;
-        margin-left: 1rem;
-        width: 100%;
-        height: 70vw;
-}
-
     section {
         padding-left: -2rem;
-        margin-bottom: 3rem;
         margin-top: 0.5rem;
         justify-content: center;
+    }
+
+    article {
+        display: flex;
+        gap: 1;
+    }
+
+    .herowork{
+        margin: .2rem;
+        width: 100%;
+        height: 70vw;
+    }
+
+    .herowork2 img {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .primarywork,
+    .secondarywork {
+        flex-wrap: wrap;
+        resize: both;
+        gap: 1;
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+        width: 100%;
+        height: 70vw;
     }
 
     footer {
@@ -269,9 +287,9 @@ footer ul li {
     }
 }
 
+/*tablet scren view */
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -303,12 +321,9 @@ footer ul li {
 
 @media screen and (max-width: 998px) {
     header {
-        flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 -2rem;
-        margin: 0;
     }
 
     main {
@@ -322,9 +337,14 @@ footer ul li {
         display: flex;
         width: 100%;
     }
-    .primarywork, .secondarywork, .herowork, .herowork2 {
+
+    .primarywork,
+    .secondarywork,
+    .herowork,
+    .herowork2 {
         flex-wrap: wrap;
-        resize: both;}
+        resize: both;
+    }
 
     img {
         width: 100vw;
@@ -340,32 +360,5 @@ footer ul li {
 
     footer {
         padding-top: 2rem 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0rem;
-        width: 100%;
-    }
-
-    main {
-        flex-wrap: wrap;
-        display: flex;
-    }
-
-
-    article {
-        flex: 1;
-        flex-wrap: wrap;
-
-    }
-
-    img {
-        width: 100vw;
     }
 }
